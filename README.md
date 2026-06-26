@@ -15,7 +15,7 @@ A self-hosted Path of Exile (PoE) sales monitoring and notification tool. It mon
 
 ## Features
 
-- **Real-time Notifications:** Uses [ntfy](https://ntfy.sh) to send instant alerts for sales.
+- **Notifications:** Uses [ntfy](https://ntfy.sh) to send alerts for sales.
 - **Web Dashboard:** View your sales history, stats, and wealth accumulation over time.
 - **Session Auto-Update:** Update your `POESESSID` directly from the web interface if it expires.
 - **Self-Hosted:** Fully containerized with Docker for easy deployment.
