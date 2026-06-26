@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  poe-monitor:
+    build: .
+    container_name: poe-monitor
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+    ports:
+      - "8060:5000"
+    environment:
+      - POESESSID=${POESESSID}
+      - NTFY_URL=${NTFY_URL}
+      - NTFY_TOPIC=${NTFY_TOPIC}
+      - POE_LEAGUE=${POE_LEAGUE}
+      - CHECK_INTERVAL=${CHECK_INTERVAL}
+      - TRADE_SEARCH_ID=${TRADE_SEARCH_ID}
+      - TZ=${TZ}
